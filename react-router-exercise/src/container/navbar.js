@@ -11,6 +11,7 @@ export default function navbar(){
                 <Li><Link to="/compo1">Compo1</Link></Li>
                 <Li><Link to="/compo2">Compo2</Link></Li>
                 <Li><Link to="/compo3">Compo3</Link></Li>
+                <Li><Link to="/menu1">Menu1</Link></Li>
             </Ul>
         </nav>
     </div>
