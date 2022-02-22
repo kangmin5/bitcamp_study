@@ -6,7 +6,7 @@ export default function Compo3(){
 
   function alertClicked() {
     alert('Alert창 테스트입니다.');
-  }
+  }  
   return (
     <Layout>
       <h1>Compo3</h1>
