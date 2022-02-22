@@ -1,11 +1,13 @@
 import React from 'react'
-import Layout from '../container/Layout'
+import Header from '../container/Header'
 
 export default function Home(){
   return(
-    <div>
-      <Layout/>
-
+    <div >
+      <Header/>
+      <div className='container'>
+        This is Home
+      </div>
     </div>
   )
 }

@@ -1,32 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+
 
 export default function navbar(){
   return (
     <div>
-        <nav>
-            <Ul>
-                <Li><Link to="/">Home</Link></Li>
-                <Li><Link to="/compo1">Compo1</Link></Li>
-                <Li><Link to="/compo2">Compo2</Link></Li>
-                <Li><Link to="/compo3">Compo3</Link></Li>
-                <Li><Link to="/menu1">Menu1</Link></Li>
-            </Ul>
-        </nav>
+    <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: "#e3f2fd" ,height:'70px'}}>
+    <div className="container">
+      <Link className="navbar-brand" to="/">KDT5</Link>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link" to="/compo1">Compo1</Link>
+          <Link className="nav-link" to="/compo2">Compo2</Link>
+          <Link className="nav-link" to="/compo3">Compo3</Link>
+          <Link className="nav-link" to="/menu1">Menu1</Link>
+        </div>
+      </div>
+    </div>
+  </nav>
     </div>
   )
 }
-
-const Ul = styled.ul`
-text-align: center;
-text-decoration: none;
-`
-const Li = styled.li`
-float: 0;
-margin-left: 2rem;
-display: inline-block;
-text-decoration: none;
-text-align: center;
-
-`
